@@ -1,0 +1,35 @@
+{
+  "name": "find-process-by-file",
+  "pluginName": "文件进程查看器",
+  "description": "查看指定文件被哪些进程占用",
+  "author":"idcpj",
+  "main": "index.html",
+  "development": {
+    "main": "http://localhost:5173"
+  },
+  "logo": "logo.png",
+  "preload": "preload.js",
+  "features": [
+    {
+      "code": "find_process_by_file",
+      "explain": "查找文件占用",
+      "platform": [
+        "win32"
+      ],
+      "cmds": [
+        "查找进程",
+        "findprocess",
+        {
+          "type": "files",
+          "label": "查找文件占用",
+          "match": "/.*/"
+        }
+      ]
+    }
+ 
+  ],
+  "pluginSetting": {
+    "single": true,
+    "height": 480
+  }
+}
